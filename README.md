@@ -1,6 +1,28 @@
 # useInterval / useIntervalWithLimits
 
+useInterval is based on https://overreacted.io/making-setinterval-declarative-with-react-hooks.
+useIntervalWithLimits is an extension that allows you to set a timelimit (limit) as well as a complete
+callback (onComplete).
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Available values
+
+### `callback`
+
+Function that gets called everytime the interval passes.
+
+### `delay`
+
+Delay in millliseonds. A value of null will stop / pause the execution.
+
+### `limit`
+
+Time limit when the interval should stop (in milliseconds).
+
+### `onComplete`
+
+Function that gets called when the limit is reached.
 
 ## Available Scripts
 
